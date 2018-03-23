@@ -95,6 +95,8 @@ $('document').ready(function(){
 	});
 
 	$('#watch').click(function(){
+		if($('#welcome').is(':visible')) 
+			$('#welcome').hide();
 		if($('#kick').is(':visible')) 
 			$('#kick').hide();
 		$('#options').fadeIn();
@@ -109,6 +111,8 @@ $('document').ready(function(){
 	});
 
 	$('#kickit').click(function(){
+		if($('#welcome').is(':visible')) 
+			$('#welcome').hide();
 		if($('#options').is(':visible')) 
 			$('#options').hide();
 		$('#kick').slideDown('slow');	
